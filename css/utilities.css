@@ -11,7 +11,7 @@
 }
 
 .btn{
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     font-weight: 600;
     border:2px solid transparent;
@@ -27,13 +27,31 @@
 }
 
 .btn-primary{
-    background:var(--primary);
-    color: var(--secondary);
+    background: hsl(182, 63%, 53%);;
+    color:  hsl(0, 0%, 9%); 
 }
 
 .btn-primary:hover{
     background: transparent;
-    border-color: var(--primary);
-    color:var(--primary); 
+    border-color: hsl(182, 63%, 53%);
+    color:hsl(182, 63%, 53%);
+}
 
+.btn-secondary{
+    background: transparent;
+    color: hsl(182, 63%, 53%);
+    border-color: hsl(182, 63%, 53%);
+}
+
+.btn-secondary:hover{
+    background: hsl(182, 63%, 53%);
+    color: hsl(0, 0%, 9%);
+}
+
+.flex-1{
+    flex:1;
+}
+
+.justify-center{
+    justify-content: center;
 }

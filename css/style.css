@@ -1,10 +1,10 @@
 @import 'utilities.css';
 :root{
     /*variables in CSS*/
-    --primary:#3DCFD3,;
-    --dark: #161616;
-    --pure: #FFFFFF;
-    --ternary: #898989;
+    --primary:hsl(182, 63%, 53%);
+    --dark: hsl(0, 0%, 9%);
+    --pure: hsl(0, 0%, 100%);
+    --ternary: hsl(0, 0%, 54%);
     --light:#F2F2F2
 }
 
@@ -22,6 +22,7 @@ body{
 
 header{
     background: var(--dark);
+    clip-path: polygon(0 0, 100% 0,100% 100%, 70% 90%, 0 100% );
 }
 
 /*difference between padding and margin*/
@@ -44,14 +45,102 @@ header nav .left a{
     -o-transition: all .3s; 
 }
 
-header nav .left a:hover   {
-    color:var(--primary);
+header nav .left a:hover{
+    color:hsl(182, 63%, 53%);
 }
 
 header nav {
     padding: 2rem 0;
 }
 
-header nav .branding {
+header nav .branding{
     margin-right: 3rem;
+}
+
+.hero{
+    padding:3rem 0;
+}
+
+.hero img{
+    width:400px;
+}
+
+.info {
+    color: hsl(0, 0%, 100%);
+    margin-top: -10rem;
+}
+
+.info h6{
+    font-size: 1.6rem;
+    color:hsl(182, 63%, 53%);
+    margin-bottom: 0.5rem;
+}
+
+.info h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.info h1 span{
+    color:hsl(182, 63%, 53%);
+}
+
+.info p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section{
+    padding:6rem 0;
+}
+
+section .about .about-me-img{
+    height:450px;
+}
+
+section .about h1{
+    margin-bottom: 1rem;
+    font-size:1.6rem;
+    font-weight:400;
+} 
+
+section h1 span{
+    color:hsl(182, 63%, 53%);
+}
+
+section .about h3{
+    font-size: 1rem;
+    margin-bottom:1rem;
+    font-weight: 400px;
+}
+
+section .about p{
+    font-family: 'Lato', sans-serif;
+    color: hsl(0, 0%, 54%);
+    line-height: 1.9;
+    margin-bottom:2 rem;
+}
+
+section .about .social a{
+    background:hsl(0, 0%, 9%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section .about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+section .about .social a:hover{
+    background: var(--primary);
 }
