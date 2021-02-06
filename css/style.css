@@ -5,7 +5,9 @@
     --dark: hsl(0, 0%, 9%);
     --pure: hsl(0, 0%, 100%);
     --ternary: hsl(0, 0%, 54%);
-    --light:#F2F2F2
+    --light:hsl(0, 0%, 95%);
+    --secondary:hsl(0, 8%, 3%);
+
 }
 
 body{
@@ -143,4 +145,28 @@ section .about .social a img{
 
 section .about .social a:hover{
     background: var(--primary);
+}
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+}
+
+.section-heading span{
+    color:hsl(182, 63%, 53%);
+}
+.section-heading +p{
+    color:var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+
 }
