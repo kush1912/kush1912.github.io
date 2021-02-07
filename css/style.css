@@ -160,13 +160,149 @@ section .about .social a:hover{
 .section-heading +p{
     color:var(--ternary);
     font-family: 'Lato', sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 8rem;
     text-align: center;
 }
 
 .container .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
 }
+
+.services{
+    background:hsl(0, 0%, 95%)
+}
+
+.services .card-wrapper .card{
+    background: hsl(0, 0%, 100%);
+    padding:3rem 2rem;
+    position: relative;
+    padding-top:5rem;
+    text-align: center;
+    transition: all, .3s ease
+}
+
+.services .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size:1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color:hsl(0, 0%, 54%);
+    line-height:1.6rem;
+}
+
+.services .card-wrapper .card:hover{
+    background:var(--dark);
+}
+
+.services .card-wrapper .card:hover h2,.services .card-wrapper .card:hover p{
+    color:var(--pure);
+}
+
+.freelancer{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,.95)),url(../images/camera.png);
+    color:var(--pure);
+    clip-path: polygon(0 0, 100% 0,100% 100%, 67% 80%, 0 100% );
+    padding-bottom: 14rem;
+}
+
+.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.freelancer p{
+    margin-bottom:2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.reviews .slider .slide{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+.reviews .slider .slide p{
+    font-family: 'Lato', sans-serif;
+    color:hsl(0, 0%, 54%);
+    margin-bottom: 1rem;
+}
+.reviews .slider .slide span{
+    font-size:0.8rem;
+}
+
+.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.reviews .slider-dots{
+    margin-top: 3rem;
+}
+
+.reviews .slider-dots .dots button{
+    font-size:0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border:none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor:pointer
+}
+
+.reviews .slider-dots .slick-active button{
+    background:hsl(182, 63%, 53%);
+    width:20PX;
+}
+
+section.work{
+    background: var(--light);
+}
+
+.work .card-wrapper.card{
+    position: relative;
+}
+
+.work .card-wrapper .card .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+}
+
+/* .work .card-wrapper .card .overlay a{
+    color:var(--secondary);
+    text-decoration: none;
+} */
