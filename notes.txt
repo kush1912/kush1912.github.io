@@ -1,0 +1,3 @@
+1. git config --global http.sslVerify false --Command used to disable the SSL Certificate. This may cause some security risks and hence advised to do this temporarily.
+src: https://confluence.atlassian.com/bitbucketserverkb/ssl-certificate-problem-unable-to-get-local-issuer-certificate-816521128.html
+
