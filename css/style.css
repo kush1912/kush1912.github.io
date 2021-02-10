@@ -388,3 +388,90 @@ section.work .card-wrapper{
 .blog .card-wrapper .card .card-content a.readmore{
     font-size: 0.8rem;
 }
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.contact .card-wrapper .card{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color:var(--ternary);
+    font-weight: 400; 
+    margin-bottom:4rem;
+}
+section.contact .input-wrap{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    margin-bottom:2rem;
+}
+
+section.contact .input-wrap-2{
+    display:flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    padding:0.5rem;
+    border:1px solid var(--light);
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border:1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding:0.5rem;
+    border:1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea:focus{
+    outline:none;
+}
+
+section.contact input{
+    outline:none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;;
+}
+
+footer .footer-logo{
+    margin-bottom:3rem;
+    width:15rem;
+}
+
+footer .footer-socials a{
+    margin-right:1rem;
+}
+
+footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-right: -1px;;
+}
+
+footer .copyright{
+    color:var(--ternary);
+}
