@@ -479,3 +479,80 @@ footer .footer-socials{
 footer .copyright{
     color:var(--ternary);
 }
+
+@media(max-width:1024px)
+{
+    header #main-nav{
+        display:none
+    }
+}
+
+.site-main-wrapper{
+    position:relative;
+}
+
+.hamberger{
+    position:absolute;
+    top:40px;
+    right:40px;
+    z-index:11;             /* What is z-index? */
+    background: none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.hamberger img{
+  width: 30px;  
+}
+
+.mobile-nav{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index: 1001;
+    background: var(--light);
+    width:100%;
+    height:100%;
+    padding:2rem;
+    padding-top:5rem;
+    transform:translateX(-100%);  /* slide the mobile-nav to outside of teh screen.*/
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition:all .5s ease-in-out;
+}
+
+.open{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.times{
+    position:fixed;
+    top:30px;
+    right:30px;
+    border:none;
+    background: none;
+    outline:none;
+    cursor:none;
+}
+
+.times img{
+    width:30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color:var(--secondary);
+    text-decoration: none;
+    font-size:2rem;
+}
+
