@@ -85,19 +85,21 @@ header nav .left a:hover{
 }
 
 header nav {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    /* padding: 2rem 0; */
 }
 
 header nav .branding{
     margin-right: 3rem;
 }
 
-.hero{
+/* .hero{
     padding:3rem 0;
-}
+} */
 
 .hero img{
     width:400px;
+    padding-bottom: 10rem;
 }
 
 .info {
@@ -328,9 +330,8 @@ section.work .card-wrapper{
 
 section.work .card-wrapper .card {
     position: relative;
-    /* height: 100%; */
-    width:80vw;
-    margin:auto;
+    height: 100%;
+    width:100%;
 }
 
 section.work .card-wrapper .card .overlay{
