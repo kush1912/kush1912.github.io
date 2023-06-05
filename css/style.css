@@ -340,7 +340,7 @@ section.work .card-wrapper .card .overlay{
     left:0;
     width:100%;
     height: 100%;
-    background: rgba(61,207,211,0.9);
+    background: rgba(61,207,211,0.9); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,9 +350,46 @@ section.work .card-wrapper .card .overlay{
     transition:all, .5s, ease;
 }
 
-section.work .card-wrapper .card .overlay a{
+section.work .card-wrapper .card .overlay .btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.work .card-wrapper .card .overlay .category{
     color:var(--secondary);
-    text-decoration: none;
+    margin-bottom: 1rem;
+    /* text-decoration: none; */
+}
+
+
+section.work .card-wrapper .card .overlay button{
+    color:var(--light);
+    /* text-decoration: none; */
+    /* border-radius:5px 0px 0px 5px; */
+    background-color: var(--dark);
+    border-color: var(--light);
+}
+
+section.work .card-wrapper .card .overlay button.right-btn{
+    border-radius:0px 5px 5px 0px;
+    padding-left: 1rem;
+}
+
+section.work .card-wrapper .card .overlay button.left-btn{
+    border-radius:5px 0px 0px 5px;
+    /* border-right-color: var(--dark); */
+    margin-right: -1rem;
+}
+
+
+section.work .card-wrapper .card .overlay button:hover{
+    background-color:var(--primary);
+    /* text-decoration: none; */
+    /* border-radius:5px; */
+    /* border-color: var(--light); */
+    /* border-color: var(--dark); */
+    color: var(--dark);
 }
 
 section.work .card-wrapper .card-wrapper .card img{
