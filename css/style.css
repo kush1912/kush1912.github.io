@@ -85,26 +85,27 @@ header nav .left a:hover{
 }
 
 header nav {
-    padding-top: 2rem;
-    /* padding: 2rem 0; */
+    position: fixed;
+    background-color: var(--dark);
+    margin-right: 0p;
 }
 
 header nav .branding{
     margin-right: 3rem;
 }
 
-/* .hero{
-    padding:3rem 0;
-} */
+.hero{
+    padding:4rem 0;
+}
 
 .hero img{
     width:400px;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
 }
 
 .info {
     color: hsl(0, 0%, 100%);
-    margin-top: -10rem;
+    /* margin-top: -10rem; */
 }
 
 .info h6{
@@ -477,18 +478,59 @@ section.work .card-wrapper .card:hover .overlay{
 }
  */
 
- .socials{
+
+ .socials-link{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-section.contact .container .socials .social-handle{
-    height: 4rem;
-    width: 4rem;
-    margin: 0rem 2rem;
+.socials-link a{
+    color:var(--dark);
+    text-decoration: none;
+    /* margin-right: 2rem; */
+    transition:all .3s ease;
+
+    -webkit-transition:all .3s ;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition: all .3s; 
+} 
+
+.socials-link a:hover{
+    color:hsl(182, 63%, 53%);
 }
 
-section.contact .card-wrapper .card h6{
+section.contact .container .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: -3rem 0rem;
+}
+
+.social-image{
+ border-radius: 100%;
+ max-height: 300px;
+ min-height: 300px;
+ margin: 3rem 3rem 3rem 3rem;
+ border-width: 100px;
+ border:5px solid var(--primary);
+ 
+}
+
+section.contact .container .social .socials-link .social-handle{
+    display: flex;
+    align-items: center;
+}
+
+section.contact .container .social .socials-link .social-handle img{
+    height: 2rem;
+    width: 2rem;
+    margin:10px;
+}
+
+
+/* section.contact .card-wrapper .card h6{
     font-size: 1rem;
     color:var(--ternary);
     font-weight: 400; 
@@ -534,7 +576,7 @@ section.contact input{
 section.contact .btn-wrapper{
     text-align: center;
     margin-top: 2rem; 
-} 
+}  */
 
 footer{
     background: var(--dark);
@@ -782,8 +824,23 @@ footer .copyright{
         grid-template-columns: repeat(1,1fr);
     }
 
-    section.contact .container .socials .social-handle{
+    section.contact .container .socials-link .social-handle img{
         height: 2rem;
         width: 2rem;
+    }
+
+    section.contact .container .social {
+        flex-direction: column;
+    }
+
+    .social-image{
+        max-height: 200px;
+        min-height: 200px;
+       }
+
+    .socials-link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 } 
