@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/workex.css">
     <link rel="icon" href="/images/social-image.jpeg">
 </head>
 <body>
@@ -21,9 +22,9 @@
             <button class="times"><img src="./images/times.svg" alt=""></button>
             <ul>
                 <li><a href="#intro">Home</a></li>
-                <li><a href="#Work-Experience">Experience</a></li>
-                <li><a href="#Projects">Projects</a></li>        
-                <li><a href="#Publications">Publications</a></li> 
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>        
+                <li><a href="#publications">Publications</a></li> 
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -37,9 +38,9 @@
                         </div>
                         <div>
                             <a href="#intro">Home</a>
-                            <a href="#Experience">Experience</a>
-                            <a href="#Projects">Projects</a>
-                            <a href="#Publications">Publications</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#publications">Publications</a>
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
@@ -135,58 +136,98 @@
         </section> -->
    
         <!--Services-->
-        <section class="services" id="Experience">
+        <section class="services" id="experience">
             <div class="container">
                 <h1 class="section-heading">Work <span>Experience</span></h1>
                 <p>I have total 3 years of experience in Software Development in frontend and backend in various tech-stacks. Prior to that I have had Internships and Publications in the field of data-science and Machine Learning.</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <a href="https://www.linkedin.com/company/greenlightplanet/" target="_blank">
-                            <img src="./images/Sunking.jpg" alt="Sunking (The Green Light Planet)">
-                        </a>
-                        <h2>Software Engineer - Backend</h2>
-                        <p>July 2022 - Present</p>
-                        <p>Project: SunKingPay</p>
-                        <p>Saas product with a Pay-as-you-Go system to facilitate the sales of solar products from Inventory Management to Leads, Orders & Loans, payments to replacement and reposession. </p>
+                <div class="timeline">
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/greenlightplanet/" target="_blank">
+                                <img src="./images/Sunking.jpg" alt="Sunking (The Green Light Planet)">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            July 2022 - Present
+                        </div>
+                        <div class="timeline__event__content ">
+                            <div class="timeline__event__title">
+                                Software Engineer - Backend
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="" target="_blank">
+                                    <p class="sub-description">Project: SunKing Pay</p> 
+                                </a>
+                                <p>Saas product with a Pay-as-you-Go system to facilitate the sales of solar products from Inventory Management to Leads, Orders & Loans, payments to replacement and reposession. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <a href="https://www.linkedin.com/company/infosys/" target="_blank">
-                            <img src="./images/Infosys.jpg" alt=" Infosys">
-                        </a>
-                        <h2>Specialist Programmer</h2>
-                        <p>October 2020 - June 2022</p> 
-                        <p>Project: Xpo Logistics Rail Optimizer</p> 
-                        <p>Facilitates end-to-end management from getting the quotation to pricing, order management, tendering & scheduling trips, shipping cargos to Invoices and final settlements.</p>
+                
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/infosys/" target="_blank"> 
+                                <img src="./images/Infosys.jpg" alt=" Infosys">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                                Oct 2020 - June 2022
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Specialist Programmer
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/company/xpologistics/" target="_blank">
+                                    <p class="sub-description">Project: Xpo Logistics Rail Optimizer</p> 
+                                </a>
+                                <p>Facilitates end-to-end management from getting the quotation to pricing, order management, tendering & scheduling trips, shipping cargos to Invoices and final settlements.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <a href="https://www.linkedin.com/company/phocket-instant-access-to-cash/" target="_blank">
-                            <img src="./images/Phocket.jpg" alt="Phocket-Instant Access to Cash">
-                        </a>
-                        <h2>Machine Learning Intern</h2>
-                        <p>June 2019 - July 2019</p>
-                        <p>Advisor – Neeraj Yadav, Mohit Bansal </p>
-                        <p>Designed, developed, evaluated innovative predictive models and success metrics. Evaluation of classification algorithms, keyword extraction and Topic Modelling.</p> 
+                
+                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/phocket-instant-access-to-cash/" target="_blank">
+                                <img src="./images/Phocket.jpg" alt="Phocket-Instant Access to Cash">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            June 2019 - July 2019
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Machine Learning Intern
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/in/mohit-bansal-bb463670/" target="_blank">
+                                    <p class="sub-description">Advisor – Neeraj Yadav, Mohit Bansal </p>     
+                                </a>
+                                <p>Designed, developed, evaluated innovative predictive models and success metrics. Evaluation of classification algorithms, keyword extraction and Topic Modelling.</p> 
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <a href="https://www.linkedin.com/company/velocis-systems/" target="_blank">
-                            <img src="./images/Velocis.jpg" alt="velocis-systems">
-                        </a>
-                        <h2>Data Analsyt Intern</h2>
-                        <p>May 2019 - June 2019</p>
-                        <p>Advisor - Vishal Bansal</p>
-                        <p>Identifying niche products for e-commerce websites. Performed data analysis (excel) lookup tables, extracting meaningful insights from data, using visualisation tools Matplotlib & seaborn.</p> 
-                    </div>
-                    <!-- <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
-                    </div>
-                    <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
-                    </div> -->
-            </div>
+                
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/velocis-systems/" target="_blank">
+                                <img src="./images/Velocis.jpg" alt="velocis-systems">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            May 2019 - June 2019
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Data Analyst Intern
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/in/vishal-bansal-5a20757a/" target="_blank">
+                                    <p class="sub-description">Advisor - Vishal Bansal</p> 
+                                </a>
+                                <p>Identifying niche products for e-commerce websites. Performed data analysis (excel) lookup tables, extracting meaningful insights from data, using visualisation tools Matplotlib & seaborn.</p> 
+                            </div>
+                        </div>
+                    </div>   
             </div>
         </section>
   
@@ -227,7 +268,7 @@
 
 
         <!--Work-->
-        <section class="work" id="work">
+        <section class="work" id="#projects">
             <section class="freelancer" id="freelancer">
                 <h1>Project Work</h1>
                 <!-- <h1 class="section-heading"><span>Project </span>Work</h1> -->
@@ -339,7 +380,7 @@
         </section>
  
 
-        <section class="publication" id="publication">
+        <!-- <section class="publication" id="publication">
             <div class="container">
                 <div class="publication-card">
                     <div class="publication-content">
@@ -371,74 +412,123 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Blog-->
-        <!-- <section class="blog" id="blog">
+        </section> -->
+
+
+        <!--Publication-->
+        <!-- <section class="services" id="Publication">
             <div class="container">
-                <h1 class="section-heading"><span>Our </span>Blog</h1>
-                <p>We Provide high standard clean Webisted for you</p>
+                <h1 class="section-heading">Research <span>Publications</span></h1>
+                <p>I have total 3 years of experience in Software Development in frontend and backend in various tech-stacks. Prior to that I have had Internships and Publications in the field of data-science and Machine Learning.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/greenlightplanet/" target="_blank">
+                            <img src="./images/Sunking.jpg" alt="Sunking (The Green Light Planet)">
+                        </a>
+                        <h2>Software Engineer - Backend</h2>
+                        <p>July 2022 - Present</p>
+                        <p>Project: SunKingPay</p>
+                        <p>Saas product with a Pay-as-you-Go system to facilitate the sales of solar products from Inventory Management to Leads, Orders & Loans, payments to replacement and reposession. </p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/infosys/" target="_blank">
+                            <img src="./images/Infosys.jpg" alt=" Infosys">
+                        </a>
+                        <h2>Specialist Programmer</h2>
+                        <p>October 2020 - June 2022</p> 
+                        <p>Project: Xpo Logistics Rail Optimizer</p> 
+                        <p>Facilitates end-to-end management from getting the quotation to pricing, order management, tendering & scheduling trips, shipping cargos to Invoices and final settlements.</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/phocket-instant-access-to-cash/" target="_blank">
+                            <img src="./images/Phocket.jpg" alt="Phocket-Instant Access to Cash">
+                        </a>
+                        <h2>Machine Learning Intern</h2>
+                        <p>June 2019 - July 2019</p>
+                        <p>Advisor – Neeraj Yadav, Mohit Bansal </p>
+                        <p>Designed, developed, evaluated innovative predictive models and success metrics. Evaluation of classification algorithms, keyword extraction and Topic Modelling.</p> 
+                    </div>
+                </div> 
+            </div>
+        </section> -->
+
+
+
+        <!--Blog-->
+        <section class="blog" id="publications">
+            <div class="container">
+                <h1 class="section-heading"><span>Research </span>Publications</h1>
+                <p>During under-graduation I was keenly interested in the field of Data Science, Machine Learning & Neural Networks. I took courses, Internships and even wrote 3 research papers in varied fields which got puplished in reputed journals. </p>
                 <div class="card-wrapper">
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/Time-series.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <a href=""><h1>Its a beginning...</h1></a>
-                            <span>Feb 9, 2017</span>
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7727047/" target="_blank"><h1>Utilization of Time Series Tools in Life-sciences and Neuroscience</h1></a>
+                            <span>December 8, 2020</span>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/harshitgujral/" target="_blank">Harshit Gujral</a>, 
+                                        <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>
+                            </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                Time series tools and their usage in the biomedical field; specifically, in neuroscience, has not been previously quantified. This study evaluates the principles and applications of few classical time series tools, such as PCA, Neural Networks, ARMA/ARIMA Models, Markov Models, Hidden Markov Models, Fourier Analysis, Spectral Analysis.
                             </p>
-                            <a class="readmore" href="">Read More...</a>
+                            <p>
+                                This study quantifies the usage from two perspectives, one, information technology professionals’, other, researchers utilizing these tools for biomedical and neuroscience research.
+                            </p>
+                            <a class="readmore" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7727047/">Read More...</a>
                         </div>
                     </div>
+                    
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/cnn-3.png" alt="">
                         </div>
                         <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_30" target="_blank">
+                                <h1>Solution to OCT diagnosis using simple baseline CNN Models</h1>
                             </a>
-                            <span>Feb 9, 2017</span>
+                            <span>Sep 26, 2021</span>
+                            <br>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>, 
+                                        <a href="https://www.linkedin.com/in/somil-rastogi-219809190/" target="_blank"> Somil Rastogi</a>
+                            </div>    
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                Computer-aided diagnosis of retinopathy is a research hotspot in the field of medical image classification. Optical coherence tomography (OCT) is widely applied in the diagnosis of ocular diseases.
                             </p>
-                            <a class="readmore"  href="">Read More...</a>
+                            <p>
+                                In this study we present the solution to classify the OCT images using simple baseline 3,5 and 7 Layer deep Convolutional Neural Networks (CNN). It also explores the effect of hyper-parameters such as dropout, image-size, batch normalization, epochs and their relationships with the accuracy, sensitivity and specificity of the models. 
+                            </p>
+                            <a class="readmore" href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_30" target="_blank">Read More...</a>
                         </div>
                     </div>
+
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/bug-2.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_7" target="_blank">
+                                <h1>Characterization and Prediction of Various Issue Types: A Case Study on the Apache Lucene Systems.</h1>
                             </a>
-                            <span>Feb 9, 2017</span>
+                            <span>Sep 26, 2021</span>
+                            <br>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/aggarwalapurva/" target="_blank">Apurva Agarwal</a>, 
+                                        <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>, 
+                                        <a href="https://www.linkedin.com/in/somil-rastogi-219809190/" target="_blank"> Somil Rastogi</a>
+                            </div>  
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                In this paper we did a comparative analysis on automated bug-clasification in the software Industry. We worked on characterization and prediction of different software issue types with respect to three parameters: distribution, mean time to repair, and top terms present in various issue types. We have compared several classic and ensemble machine learning classifiers with respect to accuracy and prediction time and provided detailed analysis on the same.
                             </p>
-                            <a class="readmore" href="">Read More...</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
-                            </a>
-                            <span>Feb 9, 2017</span>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
-                            </p>
-                            <a class="readmore" href="">Read More...</a>
+                            <a class="readmore" target="_blank" href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_7">Read More...</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!--Contact-->
         <section class="contact" id="contact">
@@ -519,13 +609,6 @@
         </section>
 
         <footer>
-            <!-- <img class="footer-logo" src="./images/logo-2.svg" alt="">
-            <div class="footer-socials">
-                <a href="#"><img class="social-handle" src="./images/instagram.png" alt=""></a>
-                <a href="#"></a><img class="social-handle" src="./images/linkedin.png" alt=""></a>
-                <a href="#"></a><img class="social-handle" src="./images/github.png" alt=""></a>
-                <a href="#"></a><img class="social-handle"src="./images/twitter.png" alt=""></a>
-            </div> -->
             <div class="copyright"> 
                 Made with ❤️ By Ajay Kushwaha
             </div>
