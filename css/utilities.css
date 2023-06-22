@@ -11,7 +11,7 @@
 }
 
 .btn{
-    padding: 0.8rem 2rem;
+    padding: 0.6rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
     border:2px solid transparent;
@@ -54,4 +54,12 @@
 
 .justify-center{
     justify-content: center;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
 }
