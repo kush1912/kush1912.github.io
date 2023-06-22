@@ -8,6 +8,8 @@ $(document).ready(function(){
         dotsClass:"dots"
     });
 
+});
+
 // Hamberger functionality
 let hamberger=document.querySelector('.hamberger')
 let times = document.querySelector('.times');
@@ -21,5 +23,5 @@ times.addEventListener('click',function(){
     mobileNav.classList.remove('open');
 });
 
-});
+
 

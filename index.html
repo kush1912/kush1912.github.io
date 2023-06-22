@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ajay Kushwaha</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/workex.css">
+    <link rel="icon" href="/images/social-image.jpeg">
 </head>
 <body>
     <div class="site-main-wrapper">
@@ -19,40 +21,90 @@
         <div class="mobile-nav">
             <button class="times"><img src="./images/times.svg" alt=""></button>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>        
-                <li><a href="#work">Work</a></li>        
-                <li><a href="#Blog">Blog</a></li>        
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>        
+                <li><a href="#publications">Publications</a></li> 
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
         <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img  src="./images/logo-2.png" alt="Logo of the brand">
+                        </div>
+                        <div>
+                            <a href="#intro">Home</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#publications">Publications</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="./images/AJAY_RESUME.pdf" target="_blank">
+                            <button class="btn btn-primary">Download CV</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="intro" id="intro">
+            <div class="inner">
+                <div class="container">
+                    <div class="flex items-center">
+                        <div class="hero flex-1">
+                            <img src="./images/man-5.png" alt="Picture Portfolio">
+                        </div>
+                        <div class="info flex-1 justify-center">
+                            <h6>AJAY KUSHWAHA</h6>
+                            <h1>I am a Software <Span>Developer</Span></h1>
+                            <p>
+                                <!-- I can work independently and have acquired a perfect blend of technical & soft skills with a desire and capability to showcase leadership qualities. I believe that my ability to break down problems into first principles, strong moral values, and tendency to stay with questions longer always helps me in finding the answers to the tougher questions. -->
+                            Sometimes you feel like the smartest person in the room, and the next moment a moron, where learning never ends, change is inevitable, where you use logic, innovation and problem-solving to make dreams turn into digital reality.
+                                <!-- With a passion for innovation, exploration and a knack for problem-solving, I'm an SDE making contributions to the software solutions which have revolutionized the way we see the world. -->
+                            </p>
+                            <div class="cv-btn">
+                            <a href="./images/AJAY_RESUME.pdf" target="_blank">
+                                <button class="btn btn-secondary">Download CV</button>
+                            </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- <header>
         <div class="container">
             <nav id="main-nav" class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="branding">
-                        <img src="./images/logo.svg" alt="Logo of the brand">
+                        <img  src="./images/logo-2.png" alt="Logo of the brand">
                     </div>
                     <div>
-                        <a href="">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#work">Work</a>
+                        <a href="#main-nav">Home</a>
+                        <a href="#Experience">Experience</a>
+                        <a href="#Projects">Projects</a>
+                        <a href="#Publications">Publications</a>
                         <a href="#Blog">Blog</a>
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
                 <div class="right">
-                    <button class="btn btn-primary ">Contact Details</button>
+                    <button class="btn btn-primary ">Download CV</button>
                 </div>
             </nav> 
             <div class="flex items-center">
                 <div class="hero flex-1">
-                    <img src="./images/man.png" alt="Picture Portfolio">
+                    <img src="./images/man-5.png" alt="Picture Portfolio">
                 </div>
                 <div class="info flex-1 justify-center">
-                    <h6>AJAY KUMAR KUSHWAHA</h6>
+                    <h6>AJAY KUSHWAHA</h6>
                     <h1>I am a Software <Span>Developer</Span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Ullam explicabo incidunt illum ipsum iste ducimus nulla quibusdam cupiditate deserunt blanditiis aperiam soluta optio culpa voluptas tempora, 
@@ -64,9 +116,10 @@
                 </div>
             </div>
         </div>
-        </header>
+        </header> -->
+  
         <!--About-->
-        <section id="about" class="about">
+        <!-- <section id="about" class="about">
             <div class="container flex items-center about-inner-wrap">
                 <div class="flex-1">
                     <img class="about-me-img" src="./images/man-2.png" alt="">
@@ -78,233 +131,485 @@
                         Laudantium, quos! At, aspernatur cupiditate temporibus omnis veniam dolorem tempora provident quos illo in optio vero debitis quibusdam ut possimus ipsam sequi?
                     </p>
                     <div class="social">
-                        <a href=""><img src="./images/website.svg" alt=""></a>
+                        <a href=""><img src="./images/website.svg" alt=""><;o/a>
                         <a href=""><img src="./images/facebook.svg" alt=""></a>
                         <a href=""><img src="./images/instagram.svg" alt=""></a>
                         <a href=""><img src="./images/twitter.svg" alt=""></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+   
         <!--Services-->
-        <section class="services" id="services">
+        <section class="services" id="experience">
             <div class="container">
-                <h1 class="section-heading"><span>Our </span>Services</h1>
-                <p>we provide high standard clean website for your business solutons.</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                <h1 class="section-heading">Work <span>Experience</span></h1>
+                <p>I have total 3 years of experience in Software Development in frontend and backend in various tech-stacks. Prior to that I have had Internships and Publications in the field of data-science and Machine Learning.</p>
+                <div class="timeline">
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/greenlightplanet/" target="_blank">
+                                <img src="./images/Sunking.jpg" alt="Sunking (The Green Light Planet)">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            July 2022 - Present
+                        </div>
+                        <div class="timeline__event__content ">
+                            <div class="timeline__event__title">
+                                Software Engineer - Backend
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="" target="_blank">
+                                    <p class="sub-description">Project: Sunking Pay</p>
+                                </a>
+                                <p>
+                                    Saas product with a Pay-as-you-Go system to facilitate the sales of solar products from Inventory Management to Leads, Orders & Loans, payments to replacement, reposession and SMS service to agents and customers.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="./images/code.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/infosys/" target="_blank"> 
+                                <img src="./images/Infosys.jpg" alt=" Infosys">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                                Oct 2020 - June 2022
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Specialist Programmer
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/company/xpologistics/" target="_blank">
+                                    <p class="sub-description">Project: XPO Logistics Rail Optimizer</p> 
+                                </a>
+                                <p>Facilitates end-to-end management from getting the quotation to pricing, order management, tendering & scheduling trips, shipping cargos to Invoices and final settlements.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="./images/media.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                
+                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/phocket-instant-access-to-cash/" target="_blank">
+                                <img src="./images/Phocket.jpg" alt="Phocket-Instant Access to Cash">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            June 2019 - July 2019
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Machine Learning Intern
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/in/mohit-bansal-bb463670/" target="_blank">
+                                    <p class="sub-description">Advisor – Neeraj Yadav, Mohit Bansal </p>     
+                                </a>
+                                <p>Designed, developed, evaluated innovative predictive models and success metrics. Evaluation of classification algorithms, keyword extraction and Topic Modelling.</p> 
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="./images/phone.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
-                    </div>
-                    <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
-                    </div>
-                    <div class="card">
-                        <img src="./images/brush.svg" alt="">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
-                    </div>
-                </div>
+                
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <a href="https://www.linkedin.com/company/velocis-systems/" target="_blank">
+                                <img src="./images/Velocis.jpg" alt="velocis-systems">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            May 2019 - June 2019
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Data Analyst Intern
+                            </div>
+                            <div class="timeline__event__description">
+                                <a href="https://www.linkedin.com/in/vishal-bansal-5a20757a/" target="_blank">
+                                    <p class="sub-description">Advisor - Vishal Bansal</p> 
+                                </a>
+                                <p>Identifying niche products for e-commerce websites. Performed data analysis (excel) lookup tables, extracting meaningful insights from data, using visualisation tools Matplotlib & seaborn.</p> 
+                            </div>
+                        </div>
+                    </div>   
             </div>
         </section>
-        <!--Freelancers-->
-        <section class="freelancer" id="freelancer">
-            <h1>I am available as a freelancer!</h1>
-            <p>We provide high standard clean website for your business solutions.</p>
-            <button class = "btn btn-primary">Download CV</button>
-        </section>
+  
+ 
         <!--Reviews-->
-        <section class="reviews" id="reviews">
+        <!-- <section class="reviews" id="reviews">
             <div class="container">
                 <h1 class= "section-heading">
                     <span>Our </span>Client
                 </h1>
                 <p>We provide high standard clean website for your business solutions.</p>
                 <div class="slider">
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
+                    <div class="slide publication-content">
+                        <img src="./images/ph-2.png" alt="">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non esse officia quasi! Dolorem quaerat illo optio odit totam? Ea, eaque obcaecati architecto soluta quia fugit quasi veritatis unde iste!</p>
                         <span> --Ajay Kushwaha</span>
                     </div>
                     <div class="slide">
-                        <img src="./images/lady.png" alt="">
+                        <img src="./images/ph-2.png" alt="">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non esse officia quasi! Dolorem quaerat illo optio odit totam? Ea, eaque obcaecati architecto soluta quia fugit quasi veritatis unde iste!</p>
                         <span> --Ajay Kushwaha</span>
                     </div>
                     <div class="slide">
-                        <img src="./images/lady.png" alt="">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non esse officia quasi! Dolorem quaerat illo optio odit totam? Ea, eaque obcaecati architecto soluta quia fugit quasi veritatis unde iste!</p>
-                        <span> --Ajay Kushwaha</span>
-                    </div>
-                    <div class="slide">
-                        <img src="./images/lady.png" alt="">
+                        <img src="./images/ph-2.png" alt="">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut non esse officia quasi! Dolorem quaerat illo optio odit totam? Ea, eaque obcaecati architecto soluta quia fugit quasi veritatis unde iste!</p>
                         <span> --Ajay Kushwaha</span>
                     </div>
                 </div>
                 <div class="slider-dots"></div>
             </div>
-        </section>
+        </section> -->
+
+        <!-- Freelancers -->
+        <div class="grey-background">
+            <section class="freelancer" id="freelancer">
+                <h1> <span style="color: var(--primary);">Project</span> Works</h1>
+                <p style="color: var(--ternary);">Don't talk, and let your work do the talking!</p>
+                <!-- <button class = "btn btn-primary">Download CV</button> -->
+            </section>    
+        </div>
+ 
         <!--Work-->
-        <section class="work" id="work">
+        <section class="work" id="projects">
             <div class="container">
-                <h1 class="section-heading"><span>Our </span>Works</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maiores earum consequuntur impedit eius illum tempore, sapiente aspernatur recusandae ratione omnis a, magni numquam iste reprehenderit! Veniam quibusdam necessitatibus quisquam.</p>
+                <!-- <h1 class="section-heading"><span>Project </span>Work</h1> -->
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae maiores earum consequuntur impedit eius illum tempore, sapiente aspernatur recusandae ratione omnis a, magni numquam iste reprehenderit! Veniam quibusdam necessitatibus quisquam.</p> -->
                 <div class="card-wrapper">
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>The Pizza-Pro</h3>
+                                <br>
+                                <span>ReactJs</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/pizza-cart" target="_blank">
+                                    <button action="https://github.com/kush1912" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://github.com/kush1912" target="_blank">  
+                                    <button action="https://github.com/kush1912" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/pizza.png" alt="">
                     </div>
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>Weather App</h3>
+                                <br>
+                                <span>NodeJs</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/weather-app" target="_blank">
+                                    <button action="https://github.com/kush1912/weather-app" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://github.com/kush1912" target="_blank">  
+                                    <button action="https://github.com/kush1912" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/weather.png" alt="">
                     </div>
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>Calendar Management</h3>
+                                <br>
+                                <span>Data Structures & Algorithms</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/calendar-management" target="_blank">
+                                    <button action="https://github.com/kush1912/calendar-management" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://github.com/kush1912" target="_blank">  
+                                    <button action="https://github.com/kush1912" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/calendar.png" alt="">
                     </div>
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>Network Topology</h3>
+                                <br>
+                                <span>Data Structures & Algorithms</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/NETWORK-TOPOLOGY" target="_blank">
+                                    <button action="https://github.com/kush1912/NETWORK-TOPOLOGY" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://github.com/kush1912" target="_blank">  
+                                    <button action="https://github.com/kush1912" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/tree 2.png" alt="">
                     </div>
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>The Casamania</h3>
+                                <br>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/Casamania" target="_blank">
+                                    <button action="https://github.com/kush1912/Casamania" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://casamania.netlify.app/" target="_blank">  
+                                    <button action="https://casamania.netlify.app/" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/casamania.png" alt="">
                     </div>
+                    
                     <div class="card">
                         <div class="overlay">
-                            <span>Category</span>
-                            <a href="#">Web Development</a>
+                            <div class="category">
+                                <h3>Youtube Text Classification</h3>
+                                <br>
+                                <span>Data Science</span>
+                            </div>
+                            <div class="btn-group">
+                                <a href="https://github.com/kush1912/Text-Classification" target="_blank">
+                                    <button action="https://github.com/kush1912/Text-Classification" target="_blank" class="btn btn-primary left-btn">Code</button>
+                                </a>
+                                <a href="https://github.com/kush1912/Text-Classification" target="_blank">  
+                                    <button action="https://github.com/kush1912/Text-Classification" target="_blank" class="btn btn-primary right-btn">Live</button>
+                                </a >
+                            </div>
                         </div>
-                        <img src="./images/ph-1.png" alt="">
+                        <img src="./images/Youtube-text-classification.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <!--Blog-->
-        <section class="blog" id="blog">
+ 
+
+        <!-- <section class="publication" id="publication">
             <div class="container">
-                <h1 class="section-heading"><span>Our </span>Blog</h1>
-                <p>We Provide high standard clean Webisted for you</p>
+                <div class="publication-card">
+                    <div class="publication-content">
+                        <div>
+                            <img src="./images/ph-2.png" alt="">
+                        </div>
+                        <div>
+                            <h1>lorem Ipsum</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sit adipisci tempora dolorem praesentium asperiores excepturi nemo error blanditiis iste, voluptates omnis voluptatibus vel nostrum non delectus ex voluptate libero.</p>
+                        </div>    
+                    </div>
+                    <div class="publication-content row-reverse">
+                        <div >
+                            <img src="./images/ph-2.png" alt="">
+                        </div>
+                        <div>
+                            <h1>lorem Ipsum</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sit adipisci tempora dolorem praesentium asperiores excepturi nemo error blanditiis iste, voluptates omnis voluptatibus vel nostrum non delectus ex voluptate libero.</p>
+                        </div>
+                    </div>
+                    <div class="publication-content">
+                        <div>
+                            <img src="./images/ph-2.png" alt="">
+                        </div>
+                        <div>
+                            <h1>lorem Ipsum</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae sit adipisci tempora dolorem praesentium asperiores excepturi nemo error blanditiis iste, voluptates omnis voluptatibus vel nostrum non delectus ex voluptate libero.</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--Publication-->
+        <!-- <section class="services" id="Publication">
+            <div class="container">
+                <h1 class="section-heading">Research <span>Publications</span></h1>
+                <p>I have total 3 years of experience in Software Development in frontend and backend in various tech-stacks. Prior to that I have had Internships and Publications in the field of data-science and Machine Learning.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/greenlightplanet/" target="_blank">
+                            <img src="./images/Sunking.jpg" alt="Sunking (The Green Light Planet)">
+                        </a>
+                        <h2>Software Engineer - Backend</h2>
+                        <p>July 2022 - Present</p>
+                        <p>Project: SunKingPay</p>
+                        <p>Saas product with a Pay-as-you-Go system to facilitate the sales of solar products from Inventory Management to Leads, Orders & Loans, payments to replacement and reposession. </p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/infosys/" target="_blank">
+                            <img src="./images/Infosys.jpg" alt=" Infosys">
+                        </a>
+                        <h2>Specialist Programmer</h2>
+                        <p>October 2020 - June 2022</p> 
+                        <p>Project: Xpo Logistics Rail Optimizer</p> 
+                        <p>Facilitates end-to-end management from getting the quotation to pricing, order management, tendering & scheduling trips, shipping cargos to Invoices and final settlements.</p>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.linkedin.com/company/phocket-instant-access-to-cash/" target="_blank">
+                            <img src="./images/Phocket.jpg" alt="Phocket-Instant Access to Cash">
+                        </a>
+                        <h2>Machine Learning Intern</h2>
+                        <p>June 2019 - July 2019</p>
+                        <p>Advisor – Neeraj Yadav, Mohit Bansal </p>
+                        <p>Designed, developed, evaluated innovative predictive models and success metrics. Evaluation of classification algorithms, keyword extraction and Topic Modelling.</p> 
+                    </div>
+                </div> 
+            </div>
+        </section> -->
+
+
+
+        <!--Publications-->
+        <section class="blog" id="publications">
+            <div class="container">
+                <h1 class="section-heading"><span>Research </span>Publications</h1>
+                <p>During under-graduation I was keenly interested in the field of Data Science, Machine Learning & Neural Networks. I took courses, Internships and even wrote 3 research papers in varied fields which got puplished in reputed journals. </p>
                 <div class="card-wrapper">
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/Time-series.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <a href=""><h1>Its a beginning...</h1></a>
-                            <span>Feb 9, 2017</span>
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7727047/" target="_blank"><h1>Utilization of Time Series Tools in Life-sciences and Neuroscience</h1></a>
+                            <span>December 8, 2020</span>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/harshitgujral/" target="_blank">Harshit Gujral</a>, 
+                                        <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>
+                            </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                Time series tools and their usage in the biomedical field; specifically, in neuroscience, has not been previously quantified. This study evaluates the principles and applications of few classical time series tools, such as PCA, Neural Networks, ARMA/ARIMA Models, Markov Models, Hidden Markov Models, Fourier Analysis, Spectral Analysis.
                             </p>
-                            <a class="readmore" href="">Read More...</a>
+                            <p>
+                                This study quantifies the usage from two perspectives, one, information technology professionals’, other, researchers utilizing these tools for biomedical and neuroscience research.
+                            </p>
+                            <a class="readmore" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7727047/">Read More...</a>
                         </div>
                     </div>
+                    
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/cnn-3.png" alt="">
                         </div>
                         <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_30" target="_blank">
+                                <h1>Solution to OCT diagnosis using simple baseline CNN Models</h1>
                             </a>
-                            <span>Feb 9, 2017</span>
+                            <span>Sep 26, 2021</span>
+                            <br>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>, 
+                                        <a href="https://www.linkedin.com/in/somil-rastogi-219809190/" target="_blank"> Somil Rastogi</a>
+                            </div>    
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                Computer-aided diagnosis of retinopathy is a research hotspot in the field of medical image classification. Optical coherence tomography (OCT) is widely applied in the diagnosis of ocular diseases.
                             </p>
-                            <a class="readmore"  href="">Read More...</a>
+                            <p>
+                                In this study we present the solution to classify the OCT images using simple baseline 3,5 and 7 Layer deep Convolutional Neural Networks (CNN). It also explores the effect of hyper-parameters such as dropout, image-size, batch normalization, epochs and their relationships with the accuracy, sensitivity and specificity of the models. 
+                            </p>
+                            <a class="readmore" href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_30" target="_blank">Read More...</a>
                         </div>
                     </div>
+
                     <div class="card">
                         <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
+                            <img src="./images/bug-2.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
+                            <a href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_7" target="_blank">
+                                <h1>Characterization and Prediction of Various Issue Types: A Case Study on the Apache Lucene Systems.</h1>
                             </a>
-                            <span>Feb 9, 2017</span>
+                            <span>Sep 26, 2021</span>
+                            <br>
+                            <div class="authors">
+                                Authors: <a href="https://www.linkedin.com/in/aggarwalapurva/" target="_blank">Apurva Agarwal</a>, 
+                                        <a href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank"> Ajay Kushwaha</a>, 
+                                        <a href="https://www.linkedin.com/in/somil-rastogi-219809190/" target="_blank"> Somil Rastogi</a>
+                            </div>  
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
+                                In this paper we did a comparative analysis on automated bug-clasification in the software Industry. We worked on characterization and prediction of different software issue types with respect to three parameters: distribution, mean time to repair, and top terms present in various issue types. We have compared several classic and ensemble machine learning classifiers with respect to accuracy and prediction time and provided detailed analysis on the same.
                             </p>
-                            <a class="readmore" href="">Read More...</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class=img-wrapper>
-                            <img src="./images/article-ph-1.png" alt="">
-                        </div>
-                        <div class="card-content">
-                            <a href="">
-                                <h1>Its a beginning...</h1>
-                            </a>
-                            <span>Feb 9, 2017</span>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aspernatur expedita placeat maiores veritatis in, praesentium magnam velit voluptatibus, id distinctio repellat deserunt sed a aperiam facilis explicabo pariatur delectus?
-                            </p>
-                            <a class="readmore" href="">Read More...</a>
+                            <a class="readmore" target="_blank" href="https://link.springer.com/chapter/10.1007/978-981-16-3071-2_7">Read More...</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--Contact-->
         <section class="contact" id="contact">
             <div class="container">
-                <h1 class="section-heading">Contact <span>Us</span></h1>
-                <p>We Provide high quality Products!</p>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./images/phone-2.svg" alt="">
-                        <h1>Call Us on</h1>
-                        <h6>+8349649515</h6> 
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <p>Hey! I am always open to new opportunities, get in touch.</p>
+                <div class="social">
+                    <div>
+                        <img class="social-image" src="./images/social-image.jpeg" alt="">
                     </div>
-                    <div class="card">
-                        <img src="./images/msg.svg" alt="">
-                        <h1>Email Us on</h1>
-                        <h6>Vidyajaykushwaha</h6> 
-                    </div>
-                    <div class="card">
-                        <img src="./images/map.svg" alt="">
-                        <h1>Visit us on</h1>
-                        <h6>+8349649515</h6> 
+                    <div class="socials-link"> 
+                        <div>
+                            <a class=" social-handle"  href="https://github.com/kush1912" target="_blank">
+                                <img src="./images/github.png" alt="kush1912">
+                                <p>kush1912</p>
+                            </a>
+                        </div>
+                        <div>                    
+                            <a class=" social-handle" href="https://mail.google.com/mail/?view=cm&fs=1&to=vidyajaykushwaha@gmail.com" target="_blank">
+                                <img src="./images/phone-1.png" alt="+91 8349649515">
+                                <p>+91 8349649515</p>
+                            </a>
+                        </div>
+                        <div>                    
+                            <a class="social-handle" href="https://mail.google.com/mail/?view=cm&fs=1&to=vidyajaykushwaha@gmail.com" target="_blank">
+                                <img src="./images/gmail.png" alt="vidyajaykushwaha@gmail.com">
+                                <p>vidyajaykushwaha@gmail.com</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="social-handle"  href="https://www.linkedin.com/in/ajay-k-19b304158/" target="_blank">
+                                <img src="./images/linkedin.png" alt="ajay-k-19b304158">
+                                <p>linkedin.com/in/ajay-k-19b304158/</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="social-handle"  href="https://www.instagram.com/kush_1912/" target="_blank">
+                                <img src="./images/instagram.png" alt="kush_1912">
+                                <p>kush_1912</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <form action="">
+                
+                <!-- <div class="card-wrapper">
+                    <div class="card">
+                        <img class="social-handle" src="./images/linkedin.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img class="social-handle" src="./images/instagram.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img class="social-handle" src="./images/github.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img class="social-handle" src="./images/twitter.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img class="social-handle" src="./images/gmail (1).png" alt="">
+                    </div>
+                </div> -->
+                <!-- <form action="">
                     <div class="input-wrap">
                         <input type="text" placeholder="Your Name " required>
                         <input type="text" placeholder="Your Email " required>
@@ -318,20 +623,13 @@
                             SEND MESSAGE
                         </button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </section>
 
         <footer>
-            <img class="footer-logo" src="./images/logo-2.svg" alt="">
-            <div class="footer-socials">
-                <a href="#"><img src="./images/website.svg" alt=""></a>
-                <a href="#"></a><img src="./images/facebook.svg" alt=""></a>
-                <a href="#"></a><img src="./images/instagram.svg" alt=""></a>
-                <a href="#"></a><img src="./images/website.svg" alt=""></a>
-            </div>
             <div class="copyright"> 
-                Copyright 2020 Message!
+                Made with ❤️ By Ajay Kushwaha
             </div>
         </footer>
     </div>
