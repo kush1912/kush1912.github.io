@@ -13,12 +13,30 @@ body{
     font-family: 'Poppins', sans-serif;
     /* overflow-x: hidden; replace x with y if it's in vertical direction */
     overflow-x: hidden;
+    /* Hide scrollbar for modern browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 html{
     scroll-behavior: smooth;
     /* overflow-x: hidden; replace x with y if it's in vertical direction */
-    overflow-x: hidden;    
+    overflow-x: hidden;
+    /* Hide scrollbar for modern browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    /* Enhanced smooth scrolling */
+    scroll-padding-top: 80px; /* Account for fixed header */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+html::-webkit-scrollbar {
+    display: none;
 }
 
 *{
@@ -27,6 +45,17 @@ html{
     margin:0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+}
+
+/* Universal scrollbar hiding for all elements */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for WebKit browsers on all elements */
+*::-webkit-scrollbar {
+    display: none;
 }
 
 /*difference between padding and margin*/
@@ -699,6 +728,14 @@ footer .copyright{
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transition:all .5s ease-in-out;
+    overflow-y: auto; /* Allow scrolling if needed */
+    /* Hide scrollbar for mobile nav */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.mobile-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .open{
