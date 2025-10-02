@@ -27,8 +27,82 @@ function initSmoothScrolling() {
     });
 }
 
+// Typewriter Effect
+class TypewriterEffect {
+    constructor(element, words, options = {}) {
+        this.element = document.querySelector(element);
+        this.words = words;
+        this.options = {
+            typeSpeed: 100,
+            deleteSpeed: 50,
+            delayBetweenWords: 2000,
+            loop: true,
+            ...options
+        };
+        this.currentWordIndex = 0;
+        this.currentCharIndex = 0;
+        this.isDeleting = false;
+        
+        if (this.element) {
+            this.type();
+        }
+    }
+    
+    type() {
+        const currentWord = this.words[this.currentWordIndex];
+        
+        if (this.isDeleting) {
+            // Deleting characters
+            this.element.textContent = currentWord.substring(0, this.currentCharIndex - 1);
+            this.currentCharIndex--;
+            
+            if (this.currentCharIndex === 0) {
+                this.isDeleting = false;
+                this.currentWordIndex = (this.currentWordIndex + 1) % this.words.length;
+                setTimeout(() => this.type(), 500);
+                return;
+            }
+        } else {
+            // Typing characters
+            this.element.textContent = currentWord.substring(0, this.currentCharIndex + 1);
+            this.currentCharIndex++;
+            
+            if (this.currentCharIndex === currentWord.length) {
+                this.isDeleting = true;
+                setTimeout(() => this.type(), this.options.delayBetweenWords);
+                return;
+            }
+        }
+        
+        const speed = this.isDeleting ? this.options.deleteSpeed : this.options.typeSpeed;
+        setTimeout(() => this.type(), speed);
+    }
+}
+
+// Initialize typewriter effect
+function initTypewriter() {
+    const words = [
+        'Software Engineer',
+        'Full Stack Developer', 
+        'Problem Solver',
+        // 'Data Scientist',
+        // 'Cloud Architect',
+        // 'Tech Innovator'
+    ];
+    
+    new TypewriterEffect('#typewriter', words, {
+        typeSpeed: 120,
+        deleteSpeed: 60,
+        delayBetweenWords: 2500,
+        loop: true
+    });
+}
+
 // Initialize smooth scrolling when DOM loads
-document.addEventListener('DOMContentLoaded', initSmoothScrolling);
+document.addEventListener('DOMContentLoaded', function() {
+    initSmoothScrolling();
+    initTypewriter();
+});
 
 // Hamberger functionality
 let hamberger=document.querySelector('.hamberger')
